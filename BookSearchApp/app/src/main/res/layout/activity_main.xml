@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/getquery"
+        android:layout_centerInParent="true"
+        android:src="@drawable/book" />
+
+    <EditText
+        android:id="@+id/getquery"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_centerInParent="true"
+        android:hint="@string/textbox_hint"
+        android:singleLine="true"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/getquery"
+        android:layout_centerInParent="true"
+        android:text="@string/search" />
+
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textAppearance="?android:textAppearanceMedium" />
+
+</RelativeLayout>
